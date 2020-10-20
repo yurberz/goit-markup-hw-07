@@ -1,0 +1,171 @@
+/*  Подвал страницы */
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $footerBgColor;
+}
+
+/* Подвал страницы адрес */
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.adress-footer {
+  display: flex;
+  flex-direction: column;
+  width: 231px;
+
+  color: $contrastTextColor;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  p {
+    margin-top: 0px;
+    margin-bottom: 9px;
+  }
+
+  a {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .email {
+    margin-bottom: 9px;
+  }
+}
+
+/* Подвал Соцсети */
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  margin-left: 70px;
+
+  b {
+    margin-bottom: 20px;
+
+    color: $contrastTextColor;
+    font-weight: $boldFontWeight;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}
+
+.socials-list {
+  display: flex;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: $transitionFunction;
+
+  .hover-logo {
+    fill: $contrastTextColor;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}
+
+/* Подвал ПОДПИСКА */
+.footer-subscribe {
+  display: flex;
+  width: 570px;
+  margin-left: 93px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.form-subscribe {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-title {
+  margin-bottom: 20px;
+
+  color: $contrastTextColor;
+  font-weight: $boldFontWeight;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.email-subscribe {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  outline: 0;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: $contrastTextColor;
+
+  transition: $transitionFunction;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accentColor;
+  }
+}
+
+.btn-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-weight: $boldFontWeight;
+  background: $accentColor;
+  border: 0;
+  outline: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: $contrastTextColor;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  transition: $transitionFunction;
+
+  .telegram-svg {
+    margin-left: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $hoverBtnColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

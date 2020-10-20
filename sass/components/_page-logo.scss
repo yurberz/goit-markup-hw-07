@@ -1,0 +1,29 @@
+// ЛОГО ШАПКИ
+.logo {
+  font-family: $logoFont;
+  font-weight: $boldFontWeight;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: $primaryTextColor;
+}
+
+.logo-custom {
+  color: $accentColor;
+}
+
+// ЛОГО ФУТЕРА
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
+  color: $contrastTextColor;
+  font-family: $logoFont;
+  font-weight: $boldFontWeight;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-custom {
+  color: $accentColor;
+}

@@ -1,0 +1,33 @@
+/* Секция клиенты */
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  width: calc((100% - 5 * 30px) / 6);
+  margin-right: 30px;
+
+  &:nth-child(6n) {
+    margin-right: 0px;
+  }
+}
+
+.clients-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  padding: 0px;
+  border: 1px solid $colorIcon;
+  border-radius: 4px;
+  fill: rgba(175, 177, 184, 1);
+
+  transition: $transitionFunction;
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    border-color: $accentColor;
+  }
+}

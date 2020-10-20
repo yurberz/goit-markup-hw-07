@@ -1,0 +1,49 @@
+/* Секция Особенности */
+.features-title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.features-section {
+  h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+    color: $primaryTextColor;
+    font-weight: $boldFontWeight;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    color: $secondaryTextColor;
+    line-height: 1.71;
+  }
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  width: calc((100% - 3 * 30px) / 4);
+  margin-right: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0px;
+  }
+
+  .features-icon {
+    display: block;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+}
